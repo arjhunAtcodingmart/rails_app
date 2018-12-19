@@ -1,0 +1,9 @@
+<div>
+<% if current_user.accountType == "admin"%>
+    <%= render partial: '/admin/user_admin' %>
+<% elsif current_user.accountType == "seller" %>
+    <%= render partial: '/user_type_seller/seller' %>
+<% else %>
+    <%= render partial: '/user_type_buyer/buyer'%>
+<% end -%>
+</div>

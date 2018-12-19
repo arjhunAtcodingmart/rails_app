@@ -1,0 +1,20 @@
+<div ng-controller="buyerController">
+    <%= button_to 'Sign out', sign_out_path, method: :delete %>
+  <table>
+    <tr>
+        <th>Product Name | </th>
+        <th>| Product Price</th>
+        <th> Images </th>
+    </tr>
+    <tr ng-repeat="x in datum">
+        <td>{{x.productName}}</td>
+        <td>{{x.productPrice}}</td>
+        <td><img src="{{x.productImage.url}}" alt="img" /></td>
+    </tr>
+  </table>
+</div>
+<script type="text/javascript">
+    var json={
+    "datum": <%= @seller.to_json.html_safe %>,
+    }
+</script>

@@ -1,0 +1,16 @@
+=> [32m#<Clearance::Configuration:0x0000564a5e1750f8[0m
+ @allow_sign_up[32m=[0m[1;36mtrue[0m,
+ @cookie_domain[32m=[0m[1;36mnil[0m,
+ @cookie_expiration[32m=[0m
+  [32m#<Proc:0x0000564a5e1750a8@/home/arjhun/.rvm/gems/ruby-2.5.1/gems/clearance-1.16.1/lib/clearance/configuration.rb:95 (lambda)>[0m,
+ @cookie_name[32m=[0m[31m[1;31m"[0m[31mremember_token[1;31m"[0m[31m[0m,
+ @cookie_path[32m=[0m[31m[1;31m"[0m[31m/[1;31m"[0m[31m[0m,
+ @httponly[32m=[0m[1;36mfalse[0m,
+ @mailer_sender[32m=[0m[31m[1;31m"[0m[31mreply@example.com[1;31m"[0m[31m[0m,
+ @redirect_url[32m=[0m[31m[1;31m"[0m[31m/[1;31m"[0m[31m[0m,
+ @rotate_csrf_on_sign_in[32m=[0m[1;36mnil[0m,
+ @routes[32m=[0m[1;36mfalse[0m,
+ @secure_cookie[32m=[0m[1;36mfalse[0m,
+ @sign_in_guards[32m=[0m[],
+ @user_model[32m=[0m
+  User([35mid[0m: integer, [35mcreated_at[0m: datetime, [35mupdated_at[0m: datetime, [35memail[0m: string, [35mencrypted_password[0m: string, [35mconfirmation_token[0m: string, [35mremember_token[0m: string)[32m>[0m

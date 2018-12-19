@@ -1,0 +1,49 @@
+<div class="account-type">
+<%= form.label :Account_Type, "Account Type" %>
+<%= form.radio_button :accountType, 'seller', checked: true %>seller
+<%= form.radio_button :accountType, 'buyer' %>buyer
+</div>
+<div class="text-field">
+  <%= form.label :email %>
+  <%= form.text_field :email, type: 'email' %>
+</div>
+
+<div class="password-field">
+  <%= form.label :password %>
+  <%= form.password_field :password %>
+</div>
+
+<div class="firstName-field">
+  <%= form.label :firstName %>:
+  <%= form.text_field :firstName %><br />
+</div>
+
+<div class='lastName-field'>  
+  <%= form.label :lastName %>:
+  <%= form.text_field :lastName %><br />
+</div>
+
+<div class='age-field'>  
+  <%= form.label :age %>:
+  <%= form.text_field :age %><br />
+</div>
+
+<div class='phone-no'>  
+  <%= form.label :phoneNo %>:
+  <%= form.text_field :phoneNo %><br />
+</div>
+
+<div class='address'>  
+  <%= form.label :address %>:
+  <%= form.text_field :address %><br />
+</div>
+
+<div class='city'>  
+  <%= form.label :'city | state' %>:
+  <%= form.text_field :city %><br />
+</div>
+
+<div class='country'>  
+  <%= form.label :country %>:
+  <%= form.text_field :country %><br />
+</div>

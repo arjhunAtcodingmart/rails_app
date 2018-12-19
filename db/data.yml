@@ -1,0 +1,39 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2018-12-17 07:07:21.241060'
+    - '2018-12-17 07:07:21.241060'
+
+---
+users:
+  columns:
+  - id
+  - created_at
+  - updated_at
+  - email
+  - encrypted_password
+  - confirmation_token
+  - remember_token
+  records: 
+  - - 1
+    - '2018-12-17 07:09:21.406426'
+    - '2018-12-17 08:13:23.217056'
+    - arjhun@gmail.com
+    - "$2a$10$u.4.4B0hzi70b6ndJWCzmO67FoXZRqdlBR0A0NvSTtECae.YKxJR."
+    - 
+    - 8feca7b558b6f74a96dd158fa790539268f6640f
+  - - 2
+    - '2018-12-17 08:19:46.026183'
+    - '2018-12-17 08:19:47.865655'
+    - admin@dorak.com
+    - "$2a$10$WrwJcb7l4ehofBKMRInln.DmoSzKDioSCfj3u7ez1ibUjNzJgFQcu"
+    - 
+    - 260f7f144780c0cbbc622327baf8fb03350259b1

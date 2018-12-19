@@ -1,0 +1,26 @@
+<p>seller</p>
+<div ng-controller='sellerController'>
+  <form method="post" action="/user_type_seller" enctype="multipart/form-data">
+    product Name: <input type="text" name="name"  ng-model="data.name"><br/>
+    
+    product Image: <input type="file" fileread="image"  name="image" accept=".jpg,.png,.jpeg"><br/>
+
+    product Quantity: <input type='text' name="quantity" ng-model="data.quantity"><br/>
+
+    productPrice: <input type='number' name='price' ng-model="data.price"><br/>
+
+    Actual Price: <input type="number" name='acPrice' ng-model='data.acPrice' ng-change=
+    "discountCal()"><br/>
+
+    selling Price:<input type="number" name='sellPrice' ng-model='data.sellPrice' ng-change=
+    "discountCal()"><br/>
+
+    <p name="discount" >Discount:<input type="number" name='discount'  ng-model='data.discount'></p>
+
+
+    product Description: <input type='text' name="description" ng-model='data.description'><br/>
+
+    <button type="submit">submit</button>
+
+  </form>
+</div>

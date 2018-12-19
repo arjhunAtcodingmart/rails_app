@@ -1,0 +1,7 @@
+{
+  "name": "Shop",
+  "private": true,
+  "dependencies": {
+    "angular-base64": "^2.0.5"
+  }
+}

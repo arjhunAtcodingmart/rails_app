@@ -1,0 +1,22 @@
+<div ng-controller="adminController">
+    <%= button_to 'Sign out', sign_out_path, method: :delete %>
+
+  <table>
+    <tr>
+        <th>user id</th>
+        <th>User email </th>
+        <th>user Type</th>
+    </tr>
+    <tr ng-repeat="x in datum">
+        <td>{{x.id}}</td>
+        <td>{{x.email}}<td>
+        <td>{{x.accountType}}<td>
+        <td><button class="btn btn-lg btn-danger" ng-Click='deleteData(x)'>Delete</button></td>
+    </tr>
+  </table>
+</div>
+<script type="text/javascript">
+    var json={
+    "datum": <%= @user.to_json.html_safe %>,
+    }
+</script>
