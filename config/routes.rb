@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   get '/userDisplay' => 'admin#userDisplay'
   get '/show/:id' => 'admin#show'
   get '/order/:id' => 'user_type_buyer#order'
-  get '/cancel_order' => 'user_type_buyer#cancelOrder'
+  get '/cancel_order/:id' => 'user_type_buyer#cancelOrder'
   get 'login/index'
   root 'login#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

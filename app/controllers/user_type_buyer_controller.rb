@@ -8,9 +8,9 @@ class UserTypeBuyerController < ApplicationController
     end
 
     def update
-        binding.pry
-        @seller = Product.find params[:id]
-        @seller.update_attributes(:status => false)
+        @seller = BuyerProduct.find(params[:id])
+        @status = @seller.update_attributes(:status => false,:reason => params['user_type_buyer']['reason'])
+        render :json => { status: @status}
     end
 
     def disp

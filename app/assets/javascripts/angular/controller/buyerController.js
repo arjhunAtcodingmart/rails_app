@@ -19,7 +19,6 @@ app.controller("buyerController", ["$scope", "$window", "Main","Buyer", '$http',
     }
   }
   $scope.buyHandler=function(data){
-    debugger;
     data.productId=data.id
     data.selectedQuantity=$scope.quantity
     delete data.id
@@ -39,11 +38,10 @@ $scope.dataHandle=function(data){
   $scope.data=data
 }
 $scope.submitReason=function(data){
-  alert($scope.reason)
-  data.reason = $scope.reason
-  console.log(data)
-  debugger;
-  temp = new Buyer(data)
+  datum={}
+  datum.id = data;
+  datum.reason = $scope.reason;
+  temp = new Buyer(datum)
   temp.save().then(function(data){
     if(data.status){
       $window.open("http://localhost:3000/",'_self')

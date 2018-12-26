@@ -2,11 +2,11 @@
 <h3>Cancel Order</h3>
   <form class="container">
     Reason:<textarea class="form-control" rows="5" id="comment" ng-model="reason"></textarea><br/>
-    <button type="submit" class="btn btn-primary" ng-click="submitReason(datum)">submit</button>
+    <button type="submit" class="btn btn-primary" ng-click="submitReason(data)">submit</button>
   </form>
 </div>
 <script type="text/javascript">
     var json={
-    "datum": <%= @seller.to_json.html_safe %>,
+    "data": <%= params["id"] %>,
     }
 </script>
