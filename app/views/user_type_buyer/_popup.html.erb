@@ -1,0 +1,28 @@
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Order</h4>
+        </div>
+        <div class="modal-body">
+        <p>product name: {{data.productName}}</p>
+        <p>product price: {{data.productPrice}}</p>
+        <p>product Discount: {{data.discountPercentage}}</p>
+        <p>product Description: {{data.productDescription}}</p>
+        <p>Product total Quantity: {{data.productQuantity}}</p>
+        <span><button ng-click='minus()' ng-model='minus'>-</button><span ng-model='quantity'>{{quantity}}</span><button ng-click='plus(productQuantity)' ng-model='plus'>+</button></span>
+        <h4 ng-model="total">Total: {{quantity * data.productPrice}}</h4>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button class="btn btn-primary" ng-click="buyHandler(data)">Buy</button>
+        </div>
+    </div>
+    
+    </div>
+</div>

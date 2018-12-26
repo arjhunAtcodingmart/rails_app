@@ -1,0 +1,24 @@
+<h4>Account Type : <%=@user.accountType%></h4>
+<p>User ID : <%=@user.id%></p>
+<p>User Name : <%= @user.firstName%> <%= @user.lastName%></p>
+<p>User Email : <%= @user.email%></p>
+<% @buyer_details.each do |data|%>
+    <p>Product Image : <%= data.product.productName%></p>
+    <p>Product Description : <%= data.product.productDescription%></p>
+    <p>Actual Price : <%= data.product.actualPrice%></p>
+    <p>Actual Price : <%= data.quantity%></p>
+    Product Image : <img src="<%= data.product.productImage.url%>" alt="img" />
+    <hr/>
+<%end%>
+
+<% @seller_details.each do |data|%>
+    <p>productName : <%= data.productName %></p>
+    <p>productQuantity : <%= data.productQuantity %></p>
+    <p>productPrice : <%= data.productPrice %></p>
+    <p>actualPrice : <%= data.actualPrice %></p>
+    <p>sellingPrice : <%= data.sellingPrice %></p>
+    <p>discountPercentage : <%= data.discountPercentage %></p>
+    <p>productDescription : <%= data.productDescription %></p>
+    Product Image : <img src="<%= data.productImage.url%>" alt="img" />
+    <hr/>  
+<%end%>

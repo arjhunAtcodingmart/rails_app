@@ -1,0 +1,10 @@
+<h2>orders</h2>
+<% @buyer_details.each do |data|%>
+    <p>Product Image : <%= data.product.productName%></p>
+    <p>Product Description : <%= data.product.productDescription%></p>
+    <p>Actual Price : <%= data.product.actualPrice%></p>
+    <p>Actual Price : <%= data.quantity%></p>
+    Product Image : <img src="<%= data.product.productImage.url%>" alt="img" />
+    <a href="/cancel_order"><button class="btn btn-info btn-lg">cancel</button></a>
+    <hr/>
+<%end%>
